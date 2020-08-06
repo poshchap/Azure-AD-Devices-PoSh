@@ -162,7 +162,7 @@ function Find-AzureADStaleDevice {
 
           #The number of days before which accounts are considered stale
           [Parameter(Mandatory,Position=0)]
-          [ValidateSet(60,90,120,150,180,360)] 
+          [ValidateSet(30,60,90,120,150,180,360)] 
           [int32]$StaleThreshold,
 
           #The switch targets Azure AD joined devices
