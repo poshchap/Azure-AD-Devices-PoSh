@@ -376,7 +376,7 @@ function Find-AzureADStaleDevice {
                 else {
 
                     #Write error and exit
-                    Write-Error -Message "For -Hybridjoined please install the Windows Server Active Directory PowerShell module and ensure you have line of site to a domain controller for the target domain - $Domain." `
+                    Write-Error -Message "For -Hybridjoined please install the Windows Server Active Directory PowerShell module and ensure you have line of sight to a domain controller for the target domain - $Domain." `
                     -ErrorAction Stop
 
                 }   #end of if ($ActiveDirectory)
